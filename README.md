@@ -28,7 +28,7 @@ enthält die Steuerung und Visualisierung des Tetris-Spiels.\
 Die Klasse TetrisEngine enthält die eigentliche Spiellogik.\
 Die Klasse TetrisGame stellt ausschließlich die grafische Darstellung bereit.
 ### KI.py
-enthält Gewichte, Neuronen, die Möglichkeit Modelle zu speichern/laden und Parameter zur Anpassung des Netzes und Evolutonsverhalten.\
+enthält Gewichte, Neuronen, die Möglichkeit Modelle zu speichern/laden und Parameter zur Anpassung des Netzes und Evolutionsverhalten.\
 Die Parameter setzen sich wie folgt zusammen:
 - Bord länge/breite
 - Inputs 
@@ -48,7 +48,7 @@ Die Parameter setzen sich wie folgt zusammen:
 - Aktivierungsfunktionen (reLU)
 - Trainingsverhalten ( Anzahl Epochen, Population, etc.)
 ### Training.py
-Kümmert sich um das Training mittels evolutionären training.\
+Kümmert sich um das Training mittels evolutionären Algorithmus.\
 Wird zum Training direkt ausgeführt.\
 Ablauf:
 1. Population erzeugen
@@ -81,6 +81,6 @@ Die Bewertung einer KI setzt sich aus mehreren Faktoren zusammen.\
 aktuell ist die Formel wie folgt: **Fitness = Score + Linien * 50000 - Löcher * 500 - Höhe * 100.**\
 Die Gewichte könen in den Parametern der Training.py angepasst werden.
 ## Anwendung
-Zum starten des Spiels, ohne KI. Muss die Datei, mit der trainierten KI (im Standard fall [.\best_tetris_ai.npz](url)), sofern vorhanden umbenannt, gelöscht oder verschoben werden. Dadurch wird die manuelle Steuerung freigeschaltet.\
-Zum starten des Spiels, mit KI, wird die Datei wieder in die Ursprünglich form gebracht oder neu trainiert. Dadurch kann beim starten der KI beim spielen zugeschaut werden.\
+Zum starten des Spiels, ohne KI, muss die Datei, mit der trainierten KI (im Standard fall [.\best_tetris_ai.npz](url)), sofern vorhanden umbenannt, gelöscht oder verschoben werden. Dadurch wird die manuelle Steuerung freigeschaltet.\
+Zum starten des Spiels, mit KI, wird die Datei wieder in die ursprünglich Form gebracht oder neu trainiert. Dadurch kann beim starten der KI beim spielen zugeschaut werden.\
 Zum trainieren der KI, wird das Skript Training.py aufgerufen. welches die ggf. vorhandene Datei einließt und weiter trainiert.
