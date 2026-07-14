@@ -11,16 +11,16 @@ Die KI wird durch einen evolutionären Algorithmus Trainiert.
 - Evolutionäres Training
 
 ## Abhängigkeiten
-Python 3.10+
-numpy
-random
-time
-dataclasses
-typing
-copy
-threading
-time
-tkinter
+- Python 3.10+
+- numpy
+- random
+- time
+- dataclasses
+- typing
+- copy
+- threading
+- time
+- tkinter
 
 ## Aufbau
 ### Game.py
